@@ -19,11 +19,12 @@ const Account = () => {
     }}>
 
       <View style={styles.ImageTextContainer}>
-        <View style={styles.ImageIcon}>
-          <Image source={{ uri: 'https://scontent-bom1-1.cdninstagram.com/v/t51.2885-15/318108803_195208003014330_5306788016129613790_n.webp?stp=dst-jpg_e35&_nc_ht=scontent-bom1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=5wLIlSizh_IAX-UonrY&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=Mjk4NjM5NjU3NzA5NTkxNTM4Mw%3D%3D.2-ccb7-5&oh=00_AfBJNu0nXoHHgcqZl_t2kEJoctrwjoVzbCMe6uYym9rnjA&oe=641884ED&_nc_sid=1527a3' }} style={{ height: 195, width: 195, borderRadius: 195 / 2, }} />
-        </View>
+        {/* <View style={styles.ImageIcon}> */}
+          {/* <Image source={{ uri: 'https://scontent-bom1-1.cdninstagram.com/v/t51.2885-15/318108803_195208003014330_5306788016129613790_n.webp?stp=dst-jpg_e35&_nc_ht=scontent-bom1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=5wLIlSizh_IAX-UonrY&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=Mjk4NjM5NjU3NzA5NTkxNTM4Mw%3D%3D.2-ccb7-5&oh=00_AfBJNu0nXoHHgcqZl_t2kEJoctrwjoVzbCMe6uYym9rnjA&oe=641884ED&_nc_sid=1527a3' }} style={{ height: 195, width: 195, borderRadius: 195 / 2, }} /> */}
+        {/* </View> */}
         <View>
-          <Text style={styles.GreetingText}>Hello, {user}</Text>
+          <Image style={{position:'absolute',left:70,top:-40}} source={require('../Images/BgPurple.png')}/>
+          <Text style={{fontWeight:'bold',fontSize:80, margin:10,justifyContent:'flex-start'}}>Hello, {user}</Text>
         </View>
       </View>
       <View style={styles.DownCard}>
