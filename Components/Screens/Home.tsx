@@ -1,9 +1,9 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import { TouchableOpacity } from 'react-native'
 import Male from '../other_components/Male';
 import Female from '../other_components/Female';
-const Home = () => {
+const Home = ({navigation}) => {
     const [Gender, setGender] = useState(true);
     const [imageSource, setImageSource] = useState(require('../Images/male.png'));
     const [isImage1, setIsImage1] = useState(true);
@@ -31,6 +31,9 @@ const Home = () => {
 return (
     <View style={{flexDirection:'column',}}>
       <View style={styles.UpperContainer}>
+        <StatusBar backgroundColor={'#f2f2f2'}
+        barStyle={'dark-content'}
+        animated={true}/>
         <TouchableOpacity style={{flexDirection:'row',borderRadius:60/2,top:2.5,
           left:5}} onPress={handleImagePress}>
             <Image source={imageSource} style={styles.Gender}/>
@@ -40,8 +43,8 @@ return (
             </View>
           </TouchableOpacity>
           <View>
-          <TouchableOpacity style={{height:500}} >
-          <Image style={{width:50,height:50,right:10,top:1}} source={require('../Images/male.png')}></Image>
+          <TouchableOpacity style={{height:500,}} onPress={()=>{navigation.navigate('Account')}} >
+          <Image style={{width:40,height:40,right:10,alignSelf:'center'}} source={require('../Images/profile-active.png')}></Image>
           </TouchableOpacity>
         </View>
       </View>

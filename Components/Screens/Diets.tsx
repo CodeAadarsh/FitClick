@@ -344,6 +344,7 @@ const Diets = ({navigation}) => {
                 marginBottom: 10,
               }}>
               <TextInput style={{color:'#000'}}
+                placeholderTextColor={"#655d7d"}
                 placeholder="Your Daily Calories"
                 keyboardType="numeric"
                 value={Calories}
@@ -460,6 +461,7 @@ const Diets = ({navigation}) => {
                 <View style={styles.Height}>
                   <TextInput style={{color:'#000'}}
                     placeholder="Weight in kg"
+                    placeholderTextColor={"#655d7d"}
                     keyboardType="numeric"
                     value={weight}
                     onChangeText={setWeight}
@@ -469,6 +471,8 @@ const Diets = ({navigation}) => {
                 <View style={styles.Height}>
                   <TextInput style={{color:'#000'}}
                     placeholder="Age"
+                    placeholderTextColor={"#655d7d"}
+
                     keyboardType="numeric"
                     value={age}
                     onChangeText={setAge}
@@ -478,7 +482,9 @@ const Diets = ({navigation}) => {
                 <Text style={styles.WHText}>Height:</Text>
                 <View style={styles.Height}>
                   <TextInput style={{color:'#000'}}
-                    placeholder="Height in meters"
+                    placeholder="Height in cm"
+                    placeholderTextColor={"#655d7d"}
+
                     keyboardType="numeric"
                     value={height}
                     onChangeText={setHeight}

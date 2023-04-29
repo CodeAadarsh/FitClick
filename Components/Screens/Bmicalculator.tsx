@@ -143,6 +143,8 @@ const Bmicalculator = ({route}) => {
               }}>
               <TextInput
                 placeholder="Weight in kg"
+                placeholderTextColor={"#655d7d"}
+
                 keyboardType="numeric"
                 value={weight}
                 onChangeText={setWeight}
@@ -169,6 +171,8 @@ const Bmicalculator = ({route}) => {
               }}>
               <TextInput
                 placeholder="Height in meters"
+                placeholderTextColor={"#655d7d"}
+
                 keyboardType="numeric"
                 value={height}
                 onChangeText={setHeight}
